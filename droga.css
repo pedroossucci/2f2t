@@ -1,0 +1,47 @@
+* {
+    margin: 0;
+    padding: 0;
+
+}
+body{
+    background-color: black ;
+}
+.item{
+    width: 95%;
+    height: 100px;
+    background-color: rgba(128, 255, 0, 0.37);
+    color: red;
+    margin: 10px;
+}
+.conteudo {
+display: grid;
+grid-template-columns: 20% 20% 20% 20% 20%;
+grid-template-rows: 80% 100% 100% 100% 100%;
+}
+.barra{
+    background-color: rgb(33, 132, 145);
+    height: 25vh;
+    grid-area: barra;
+}
+.lado{
+background-color: rgb(0, 26, 141);
+height: 60vh
+}
+.principal{
+background-color: rgb(92, 0, 0);
+height: 25vh;
+grid-area: lado;
+}
+.rodape{
+background-color: rgb(92, 0, 0);
+height: 25vh;
+grid-area: rodape;
+}
+.meu-site{
+      
+    display: grid;
+    grid-template-columns: 20% 80%;
+    grid-template-areas: 
+                     "barra barra"
+                     "lado principal"
+                     "lado rodape";
