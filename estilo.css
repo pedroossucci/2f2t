@@ -1,0 +1,157 @@
+
+@import 'menu.css';
+
+
+.rodape{
+    width: 100%;
+    text-align: center;
+    background: rgb(84, 119, 60);
+    color: white;
+}
+
+.img-mobile {
+ width: 100%;
+}
+
+div[class^="item-"]{
+    background-color: rgb(0, 60, 255);
+    height: 200px;
+   margin: 5px;
+    grid-area: "info";
+
+}
+
+.info{
+    display: grid;
+}
+
+
+@media screen and (min-width: 820px) {
+    
+    .header{
+        height: 100px;
+        background-color: rgb(35, 54, 22);
+    }
+    .conteudo-home{
+        display: flex;
+        padding: 10px;
+    }
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--gray);
+
+    }
+
+    .hamb{
+        display: none;
+    }
+
+    #logo {
+        width: 10vh;
+        margin: 10px;
+    }
+
+    .conteudo-droga{
+        display: grid;
+        grid-template-columns: 50% 50%;
+        grid-template-rows: "def def";
+    }
+
+    .definicao{
+        display: flex;
+        width: 100vw;
+    }
+
+    .descricao{
+        height: 100%;
+        padding: 80px;
+        width: 70vw;
+    }
+
+    .img-definicao{
+        display: block;
+        text-align: end;
+        height: 30vh;
+        width: 30vw;
+    }
+
+    #img-def{
+        display: flex;
+        width: 70%;
+        align-items: center;
+    }
+
+    .info{
+        grid-template-columns: 50% 50%;
+  grid-template-areas: "info""info";
+
+    }
+    
+    div[class^="item-"]{
+ margin-left: 5px;
+    }
+
+
+}
+
+@media screen and (min-width: 1224px) {
+    .header{
+        height: 150px;
+        background-color: rgb(17, 32, 6);
+    }
+
+    .nav{
+        max-height: none;
+        top: 0;
+        position: relative;
+        float: right;
+        width: fit-content;
+        background-color: transparent;
+    }
+    .menu li{
+        float: left;
+    }
+    .menu a:hover{
+        background-color: transparent;
+        color: var(--gray);
+
+    }
+
+    .hamb{
+        display: none;
+    }
+
+    #logo {
+        width: 10vh;
+        margin: 10px;
+    }
+
+.conteudo-droga{
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-areas: "def def def";
+}
+
+.info{
+    display: grid;
+    grid-template-columns: 33% 34% 33%;
+    grid-template-areas: "info info info";
+}
+
+
+}
+
+
+
+
