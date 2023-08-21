@@ -1,3 +1,3 @@
 # segundo trimestre - mobile-first
 
-João Mateus - 20
+pedro a.30
